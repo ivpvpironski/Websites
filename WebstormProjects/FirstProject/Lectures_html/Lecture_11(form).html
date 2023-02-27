@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lecture_11</title>
+</head>
+<body>
+<!--
+text  Използва се за въвеждане на текст
+radio 
+Създава радио бутон (възможност за създаване на
+няколко избора)
+submit  Създава бутон за изпращане на формата
+checkbox  Създава поле за поставяне на отметка/
+-->
+<form>
+    <fieldset>
+        <legend>Лична информация:</legend>
+       <form>
+    Име:<br>
+    <input type="text" name="firstname" value="Иван"><br>
+    Фамилия:<br>
+    <input type="text" name="lastname" value="Стоянов"><br>
+    <input type="radio" name="gender" value="male" checked> Мъж<br>
+    <input type="radio" name="gender" value="female"> Жена<br><br>
+    <input type="submit" value="Submit">
+      </form>
+    </fieldset>
+</form>
+<hr>
+
+<form>
+    <input type="checkbox" name="vehicle1" value="card">Кредитна карта<br>
+    <input type="checkbox" name="vehicle2" value="money">Наложен платеж<br>
+    <input type="submit" value=”Submite”>
+</form>
+<hr>
+
+<form action="action_page.php">
+    <select name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+</form>
+<hr>
+
+<form action="action_page.php">
+ <textarea name="message" rows="10" cols="40">
+ Текст, който се въвежда във формуляра.
+ </textarea>
+    <br>
+    <input type="submit">
+</form>
+<hr>
+<button type="button" onclick="alert('Здравей! Ти ме натисна.')">Натисни</button>
+<hr>
+<form action="action_page.php">
+    <label for="favcolor">Избери любим цвят:</label>
+    <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+    <input type="submit">
+</form>
+<hr>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<h2>
+    Специални предмети
+</h2>
+<p id="text">
+
+</p>
+<!--<p id="text"></p>-->
+</body>
+</html>
+<script>
+    let words = ["Програмиране с Java","Компютърна графика","Уеб дизайн"]
+    words.splice(1,0,"Интернет програмиране")
+    words.sort()
+    const elements = document.querySelectorAll("text");
+
+    console.log(document.getElementById("text"))
+    // console.log(words)
+    words.forEach(elements => document.getElementById("text"))
+</script>

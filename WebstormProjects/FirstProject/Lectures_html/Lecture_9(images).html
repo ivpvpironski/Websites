@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lecture_9</title>
+</head>
+<body>
+<!--src - задава път до файла на изображението.
+width - определя ширина на изображението.
+height - височината на изображението.
+alt – задава алтернативен текст на изображение. Показва се когато изображението не се зарежда в уеб страницата.
+title – задава надпис към изображение когато мишката е над него.
+
+<img src="picture.jpg"> -- picture.jpg се намира в една и съща папка с уеб страница
+<img src="images/picture.jpg"> -- picture.jpg се намира в папка images, която е в една папка с уеб страницата
+<img src="/images/picture.jpg"> -- picture.jpg се намира папка images, която е в основната директория на уеб сайта
+<img src="../picture.jpg"> -- picture.jpg се намира в папка на едно ниво с папката с уеб страница
+-->
+<img src=" http://fossil.2of4.net/html-editor/logo" width="240" height="150">
+<p>1. Изображение от друг сайт</p>
+<hr>
+
+<a href="https://bg.wikipedia.org/wiki/HTML"> <img src=" HTML5_logo.png"> </a>
+<p>Hyperlink image</p>
+<hr>
+
+
+<h1>My first SVG</h1>
+<svg xmlns="http://www.w3.org/2000/svg"
+     version="1.1">
+    <circle cx="100" cy="50" r="40" stroke="black"
+            stroke-width="2" fill="red" />
+</svg>
+<hr>
+
+<picture>
+    <source media="(min-width: 650px)" srcset="images/responsiveimage.jpg">
+    <source media="(min-width: 465px)" srcset="images/season.jpg">
+    <img src="images/office.jpg" style="width:auto;">
+</picture>
+<hr>
+<canvas id="myCanvas" width="400" height="300" style="border:1px solid #00ff00;">
+    Браузърът не поддържа HTML 5 canvas елемент.
+</canvas>
+<hr>
+
+</body>
+</html>

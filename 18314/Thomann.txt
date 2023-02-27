@@ -1,0 +1,68 @@
+CREATE DATABASE Thomann CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE Thomann;
+
+
+--
+-- Table structure for table `items`
+--
+
+CREATE TABLE `items` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `model` varchar(45) DEFAULT NULL,
+  `name` varchar(100) DEFAULT NULL,
+  `price` varchar(45) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `items`
+--
+
+INSERT INTO `items` (`id`, `model`, `name`, `price`) VALUES
+(1, 'Drums', 'Millenium Focus Junior Drum Set Black', '$155'),
+(2, 'Drums', 'Millenium Youngster Drum Set Green', '$85'),
+(3, 'Drums', 'Pearl Roadshow Jr. Jet Black', '$275'),
+(4, 'Drums', 'Startone Star Drum Set Studio -BK', '$177'),
+(5, 'Drums', 'Gretsch Drums Energy Studio Black', '$689'),
+(6, 'Guitars', 'Harley Benton GL-2NT Guitarlele', '$49'),
+(7, 'Guitars', 'Harley Benton TE-90QM Trans Red', '$168'),
+(8, 'Guitars', 'Harley Benton TE-40 TBK Deluxe Series', '$119'),
+(9, 'Guitars', 'ESP LTD M-4 Black Metal', '$859'),
+(10, 'Guitars', 'Harley Benton PB-20 SBK Standard Series', '$111'),
+(11, 'Brass', 'Thomann TR 200 Bb-Trumpet', '$135'),
+(12, 'Brass', 'Bach VBS 1S Trumpet', '$1,577'),
+(13, 'Brass', 'Thomann KEP 314 L Kids Tenor Horn', '$379'),
+(14, 'Brass', 'Thomann HR-104 F French Horn', '$425'),
+(15, 'Brass', 'B&S MS27IK-L Bb/F/Ges/D-Basstromb.', '$6,899'),
+(16, 'Brass', 'Thomann Classic TB500 L Trombone', '$211'),
+(17, 'Brass', 'Thomann Bb- Tuba \"Little Bear\"', '$1,590'),
+(18, 'Woodwind', 'Schreiber D-26 Bb-Clarinet - NEW', '$1,479'),
+(19, 'Woodwind', 'Buffet Crampon BC4131-2-0 Oboe', '$1,777'),
+(20, 'Woodwind', 'Muramatsu EX-III-RBE Flute', '$3,499'),
+(21, 'Woodwind', 'Gebrüder Mönnig 214 Topas Bassoon\n', '$14,990'),
+(22, 'Woodwind', 'Yanagisawa S-WO1 Soprano Sax', '$2,768'),
+(23, 'Woodwind', 'Startone STS-75 Tenor Sax', '$349'),
+(24, 'Other', 'K&M 10065 Music Stand Black', '$32'),
+(25, 'Other', 'Thomann Drum Tuning Key', '$2'),
+(26, 'Other', 'Ernie Ball 2223', '$5'),
+(27, 'other', 'Harley Benton CPT-20', '$15');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `items`
+--
+ALTER TABLE `items`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `items`
+--
+ALTER TABLE `items`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+COMMIT;
